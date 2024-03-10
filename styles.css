@@ -136,7 +136,7 @@ span {
     color: var(--snd-bg-color);
     box-shadow: 0 0 1rem (--main-color);
 }
-.down-btn {
+.btn {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -149,6 +149,39 @@ span {
     transition: -5s ease;
 }
 
-.down-btn:hover {
+.btn a:hover {
     box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+
+.about-img img {
+    width: 30vw;
+    border: 5px solid #ec83a9;
+    border-radius: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
