@@ -243,7 +243,7 @@ transition: .5s ease;
 
 .port-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 5fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -352,4 +352,40 @@ transition: .5s ease;
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+/* Footer Styling */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background: var(--bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    padding-left: 120px;
+}
+
+.footer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-right: 140px;
+    background: var(--main-color);
+    border-radius: 10px;
+    transition: .5 ease;
+}
+
+.footer-icon a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icon a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
 }
