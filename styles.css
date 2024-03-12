@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: var(--snd-bf-color);
     color: var(--text-color);
 }
 
@@ -39,7 +39,7 @@ section {
     left: 0;
     width: 100%;
     padding: 4rem 9%;
-    background: var(--bg-color);
+    background: var(--snd-bf-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,7 +205,7 @@ span {
 .service-container .service-box {
 flex: 1 1 30rem;
 text-align: center;
-background: var(--snd-bg-color);
+background: var(--bg-color);
 padding: 3rem 2rem 4rem;
 border-radius: 4rem;
 border: 0.5rem solid var(--bg-color);
@@ -238,7 +238,7 @@ transition: .5s ease;
 }
 
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .port-container {
@@ -309,4 +309,47 @@ transition: .5s ease;
 .port-layer i {
     font-size: 2rem;
     color: var(--snd-bg-color);
+}
+
+/* Contact Styling */
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;   
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
 }
