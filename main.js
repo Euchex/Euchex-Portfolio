@@ -1,14 +1,14 @@
-// toggle icon navbar
+/*toggle icon navbar*/
 
 let nemuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active');
 }
 
-// scroll section active link
+/*scroll section active link*/
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -30,19 +30,19 @@ sections.forEach(sec => {
 
 });
 
-// Sticky navbar
+/*Sticky navbar*/
 
 let header = document.querySelector('header');
 header.classList.toggle('sticky', window.scrollY > 100);
 
-// remove toggle icon and navbar
+/*remove toggle icon and navbar*/
 
 menuIcon.classList.remove('fa-xmark');
 navbar.classList.remove('active');
 
 };
 
-// Scroll reveal
+/*Scroll reveal*/
 
 ScrollReveal({
     distance: '80px',
@@ -55,7 +55,7 @@ ScrollReveal().reveal('.home-img, .service-container, .port-box, .contact form',
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-// Typed JS
+/*Typed JS*/
 
 const typed = new Typed('.multiple-text', {
 strings: ['Frontend Developer', 'Web Designer', 'Graphics Desiner'],
