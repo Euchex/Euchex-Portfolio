@@ -1,10 +1,10 @@
-/*toggle icon navbar*/
-let nemuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// JavaScript code to toggle the navigation menu
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
 
-nemuIcon.onclick = () => {
-    
-}
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
 /*scroll section active link*/
 
 
