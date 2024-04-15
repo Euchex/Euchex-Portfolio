@@ -617,11 +617,21 @@ transition: .5s ease;
         
     }
 
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-device-width: 480px) { /* Target smaller mobile screens */
     .logo {
         display: block; /* Display the logo */
+    }
+
+    .logo img {
+        max-width: 100%; /* Ensure the logo image scales with the container */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
