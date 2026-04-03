@@ -39,7 +39,7 @@ section {
 }
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -496,7 +496,7 @@ transition: .5s ease;
 
 @media (max-width: 991px) {
     .header {
-        padding: 1rem 3%;
+        padding: 2rem 3%;
     }
 
     section {
