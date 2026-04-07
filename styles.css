@@ -530,10 +530,15 @@ transition: .5s ease;
         display: block;
     }
 
+    .home {
+        flex-direction: column;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
         left: 0;
+        right: 20;
         width: 100%;
         padding: 1rem 46rem;
         background: var( --snd-bf-color);
@@ -548,12 +553,8 @@ transition: .5s ease;
 
     .navbar a {
         display: block;
-        font-size: 2rem;
+        font-size: rem;
         margin: 3rem 0;
-    }
-
-    .home {
-        flex-direction: column;
     }
 
     .home-content h1 {
@@ -623,6 +624,16 @@ transition: .5s ease;
         height: auto;
     }
 
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
 
 @media screen and (max-device-width: 480px) {

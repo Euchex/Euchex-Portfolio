@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+text-decoration: none;
+border: none;
+outline: none;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family: "Nunito", sans-serif;
+}
+
+:root {
+--bg-color: #191f36;
+--snd-bf-color: #262b40 ;
+--text-color: #fff;
+--text1-color: #444444;
+--text2-color: #7b7b7b;
+--main-color: #59b2f4;
+--btn-color: #edaa23;
+--gof-color: #1e74be;
+--gbg-color: #ffffff;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, .contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text2-color);
+    background: var(--snd-bf-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--gbg-color);
+    border: 3px solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem (var(--btn-color));
+    font-size: 1.6rem;
+    color: var(--snd-bf-color);
+    letter-spacing: 1px; 
+    font-weight: 600;
+    transition: -5s ease;
+}
+
+.btn a:hover {
+    box-shadow: none;
+}
