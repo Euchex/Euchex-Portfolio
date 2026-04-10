@@ -38,3 +38,25 @@ window.onscroll = () => {
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 };
+
+// Scroll reveal
+// ScrollReveal({
+//     distance: '80px'
+//     duration: 2000,
+//     delay: 200,
+// });
+
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact-form', {origin: 'bottom'});
+ScrollReveal().reveal('.home-contact h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-contact, .about-content', {origin: 'right'});
+
+// Typed Js
+const Typed = new Typed('.multiple-text', {
+    strings: ['Web Developer', 'Copywriter', 'Graphics Designer', 'Social Media Manager',],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+
+})
